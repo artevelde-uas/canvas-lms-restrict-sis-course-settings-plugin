@@ -8,7 +8,8 @@
   "files": [
     "src/index.js",
     "src/api.js",
-    "src/plugins/disableCourseActions.js"
+    "src/plugins/disableCourseActions.js",
+    "src/plugins/disableCourseSettings.js"
   ],
   "peerDependencies": {
     "@ahsdile/canvas-lms-app": "^0.4.0"
