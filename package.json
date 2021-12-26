@@ -1,17 +1,21 @@
 {
-  "name": "@ahsdile/canvas-lms-restrict-sis-course-settings-plugin",
-  "version": "0.1.0",
-  "description": "Plugin for the Canvas LMS theme app that restricts some settings in courses created by the SIS import/sync",
-  "license": "MIT",
+  "name": "@artevelde-uas/canvas-lms-restrict-sis-course-settings-plugin",
+  "version": "1.0.0",
+  "description": "Restrict some settings in courses created by the SIS import/sync",
+  "keywords": [
+    "Canvas LMS"
+  ],
+  "license": "ISC",
   "author": "Renaat De Muynck <renaat.demuynck@arteveldehs.be>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/artevelde-uas/canvas-lms-restrict-sis-course-settings-plugin.git"
+  },
   "module": "src/index.js",
   "files": [
-    "src/index.js",
-    "src/api.js",
-    "src/plugins/disableCourseActions.js",
-    "src/plugins/disableCourseSettings.js"
+    "src/"
   ],
   "peerDependencies": {
-    "@ahsdile/canvas-lms-app": "^0.4.0"
+    "@artevelde-uas/canvas-lms-app": "^1.5.0"
   }
 }
