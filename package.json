@@ -6,12 +6,9 @@
   "author": "Renaat De Muynck <renaat.demuynck@arteveldehs.be>",
   "module": "src/index.js",
   "files": [
-    "src/index.js",
-    "src/api.js",
-    "src/plugins/disableCourseActions.js",
-    "src/plugins/disableCourseSettings.js"
+    "src/"
   ],
   "peerDependencies": {
-    "@artevelde-uas/canvas-lms-app": "^0.4.0"
+    "@artevelde-uas/canvas-lms-app": "^1.5.0"
   }
 }

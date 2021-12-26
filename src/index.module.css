@@ -1,0 +1,136 @@
+:global :local(.restrict-sis-course-settings) #course_form {
+  /* remove default input styles */
+  & select[disabled],
+  & input[type="text"][disabled],
+  & textarea[disabled] {
+    appearance: none;
+    height: unset;
+    line-height: unset;
+    margin: 0.25em 0;
+    padding: 0;
+    border: unset;
+    background: unset;
+    box-shadow: unset;
+    cursor: unset;
+  }
+
+  & select[disabled] > option {
+    padding: 0;
+  }
+
+  & textarea[disabled] {
+    resize: none;
+    overflow: visible auto;
+  }
+
+  & input[type="hidden"] + input[type="checkbox"][disabled] {
+    &,
+    & + label {
+      opacity: 0.5;
+    }
+  }
+
+  /* Image */
+  & .CourseImageSelector[disabled] > * {
+    display: none;
+  }
+
+  /* Bleuprint and template courses */
+  /*& #blueprint_menu[disabled],*/
+  & #course_template_details[disabled] {
+    & input[type="hidden"] + div {
+      opacity: 0.5;
+    }
+  }
+
+  /* Participation */
+  & #availability_options_container[disabled] > div > fieldset > legend + span > span > span > span > span > span > span {
+    /* Course participation */
+    &:nth-child(1) {
+      display: none;
+    }
+
+    &:nth-child(2) > span {
+      font-weight: inherit;
+    }
+
+    /* Datetime selectors */
+    &:nth-child(3) > span > span {
+      padding: 0 !important;
+      overflow: hidden;
+
+      & > span:nth-child(2) > label > span > span {
+        display: flex;
+
+        & > span {
+          padding: 0;
+
+          &:nth-child(1) > span {
+            font-weight: inherit;
+            margin: 0 0.5em 0 1.5em;
+
+            &::after {
+              content: ':';
+            }
+          }
+
+          &:nth-child(2) > span {
+            all: unset;
+
+            & input {
+              margin: 0;
+              cursor: inherit;
+            }
+
+            & svg {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+
+    /* Viewing restriction checkboxes */
+    &:nth-child(4),
+    &:nth-child(5) {
+      & > div {
+        opacity: 0.5;
+
+        & > input[type="hidden"] + label {
+          cursor: not-allowed;
+        }
+      }
+    }
+  }
+
+  /* Course visibility */
+  & #course_visibility[disabled] .panel-border {
+    border: none;
+    padding: 0;
+
+    & > #customize_course_visibility {
+      & > label.syllabus-visibility {
+        padding-left: 1.5em;
+
+        &::after {
+          content: ':';
+        }
+      }
+
+      & > #Syllabus {
+        width: auto;
+      }
+    }
+
+    & > *:not(#customize_course_visibility),
+    & + br {
+      display: none;
+    }
+  }
+
+  /* More options */
+  & .course_form_more_options_link[disabled],
+  & .course_form_more_options[disabled] {
+    display: none;
+  }
+}
