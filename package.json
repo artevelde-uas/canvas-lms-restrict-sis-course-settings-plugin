@@ -1,6 +1,6 @@
 {
   "name": "@artevelde-uas/canvas-lms-restrict-sis-course-settings-plugin",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Restrict some settings in courses created by the SIS import/sync",
   "keywords": [
     "Canvas LMS"
